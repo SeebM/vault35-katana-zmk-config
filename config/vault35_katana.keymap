@@ -14,9 +14,9 @@
             label = "APT";
 
             bindings = <
-                &kp V          &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp DE_Y       &kp U          &hr RCTRL O
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &none
-                &kp Q          &kp C          &kp G          &kp D          &kp B          &kp X          &kp M          &kp DE_COMMA   &kp DE_DOT     &kp DE_MINUS
+                &kp V          &kp W          &kp F          &kp P         &kp B            &kp J          &kp L          &kp DE_Y       &kp U          &hr RCTRL O
+                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H   &hl RALT K       &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &none
+                &kp Q          &kp C          &kp G          &kp D         &kp B &kp C_MUTE &kp X          &kp M          &kp DE_COMMA   &kp DE_DOT     &kp DE_MINUS
                                               &trans      &kp ESC  &my_lt NAV SPACE &none  &my_lt SYM E &none   &my_lt NUM TAB &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -38,7 +38,7 @@
             bindings = <
                 &kp COPY       &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT     &kp TAB
                 &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &trans
-                &trans         &kp HOME       &kp PG_DN      &kp END         &trans         &trans         &kp HOME       &kp PG_UP      &kp END        &trans
+                &trans         &kp HOME       &kp PG_DN      &kp END         &trans  &trans &trans         &kp HOME       &kp PG_UP      &kp END        &trans
                   &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,7 +60,7 @@
             bindings = <
                 &kp DE_ACUTE   &kp DE_GRAVE   &kp DE_LBKT    &kp DE_RBKT      &kp DE_QMARK   &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &kp DE_FSLH
                 &kp DE_BSLH    &kp DE_AT      &kp DE_LPAR    &kp DE_RPAR      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &trans
-                &trans         &kp DE_TILDE   &kp DE_LBRC    &kp DE_RBRC      &trans         &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_HASH
+                &trans         &kp DE_TILDE   &kp DE_LBRC    &kp DE_RBRC      &trans  &trans &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_HASH
                   &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
