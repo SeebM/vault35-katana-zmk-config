@@ -10,24 +10,35 @@
     keymap {
         compatible = "zmk,keymap";
 
-        kneir_layer {
-            label = "Base";
+        aptmak {
+            label = "APT";
+
             bindings = <
-       &kp DE_Y      &kp L        &kp G        &kp D          &kp P              &kp J         &kp F         &kp O        &kp U       &hr RCTRL R
-       &hl LCTRL A   &hl LALT S   &hl LGUI T   &hl LSHFT H    &hl RALT B         &hr RALT K    &hr RSHFT N   &hr RGUI E   &hr LALT I  &none
-       &kp Q         &kp W        &kp C        &kp V          &kp X      &none   &kp DE_Z      &kp M         &kp DE_COMMA &kp DE_DOT  &kp DE_MINUS
-                     &trans       &my_lt MED ESC  &my_lt NAV SPACE &none &my_lt SYM ENTER &none   &my_lt NUM TAB &trans
-                     // &kp N1       &kp N2  &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8
+                &kp V          &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp DE_Y       &kp U          &hr RCTRL O
+                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &none
+                &kp Q          &kp C          &kp G          &kp D          &kp B          &kp X          &kp M          &kp DE_COMMA   &kp DE_DOT     &kp DE_MINUS
+                                              &trans      &kp ESC  &my_lt NAV SPACE &none  &my_lt SYM E &none   &my_lt NUM TAB &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+    //     kneir_layer {
+    //         label = "Base";
+    //         bindings = <
+    //    &kp DE_Y      &kp L        &kp G        &kp D          &kp P              &kp J         &kp F         &kp O        &kp U       &hr RCTRL R
+    //    &hl LCTRL A   &hl LALT S   &hl LGUI T   &hl LSHFT H    &hl RALT B         &hr RALT K    &hr RSHFT N   &hr RGUI E   &hr LALT I  &none
+    //    &kp Q         &kp W        &kp C        &kp V          &kp X      &none   &kp DE_Z      &kp M         &kp DE_COMMA &kp DE_DOT  &kp DE_MINUS
+    //                  &trans       &my_lt MED ESC  &my_lt NAV SPACE &none &my_lt SYM ENTER &none   &my_lt NUM TAB &trans
+    //                  // &kp N1       &kp N2  &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8
+    //         >;
+		// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+    //     };
 
         nav_layer {
             label = "Nav";
             bindings = <
-       &trans     &trans     &trans      &trans          &trans           &trans           &kp DE_OE      &kp DE_UE   &trans     &trans
-       &kp DE_AE  &kp DE_SZ  &trans      &trans          &trans           &kp LARW         &kp DARW       &kp UARW    &kp RARW   &trans
-       &trans     &trans     &trans      &trans          &trans   &none   &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &trans
+                &kp COPY       &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT     &kp TAB
+                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &trans
+                &trans         &kp HOME       &kp PG_DN      &kp END         &trans         &trans         &kp HOME       &kp PG_UP      &kp END        &trans
                   &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -47,10 +58,10 @@
         symbol_layer {
             label = "Symbol";
             bindings = <
-       &trans         &kp DE_GRAVE   &kp DE_ACUTE   &kp RA(LS(SEMI)) &kp LBRC       &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &kp DE_FSLH
-       &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &none
-       &trans         &kp TILDE      &kp DE_SQT     &kp UNDERSCORE   &trans  &none  &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_TILDE
-                      &trans         &trans         &trans           &none          &trans          &none          &trans      &trans
+                &kp DE_ACUTE   &kp DE_GRAVE   &kp DE_LBKT    &kp DE_RBKT      &kp DE_QMARK   &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &kp DE_FSLH
+                &kp DE_BSLH    &kp DE_AT      &kp DE_LPAR    &kp DE_RPAR      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &trans
+                &trans         &kp DE_TILDE   &kp DE_LBRC    &kp DE_RBRC      &trans         &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_HASH
+                  &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
