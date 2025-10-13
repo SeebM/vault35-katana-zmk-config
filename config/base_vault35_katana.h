@@ -71,7 +71,7 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <170>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <150>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -84,7 +84,7 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <170>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <150>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
