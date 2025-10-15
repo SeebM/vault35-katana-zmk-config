@@ -75,7 +75,8 @@
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 32 33>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 32 33 34 35 36 37>;
+			hold-trigger-on-release;
         };
         hr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
@@ -84,11 +85,12 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <170>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 32 33>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 32 33 34 35 36 37>;
+			hold-trigger-on-release;
         };
 
         my_lt: my_layer_taps {
@@ -98,7 +100,7 @@
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <170>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <200>;
             // global-quick-tap;
             bindings = <&mo &kp>, <&kp>;
             // non-thumb keys
