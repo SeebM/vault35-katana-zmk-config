@@ -22,6 +22,13 @@
       #binding-cells = <0>;
       bindings = <&macro_tap &kp S &macro_release &kp RSHIFT &macro_tap &kp C &kp H>;
     };
+  macro_ion:
+    macro_ion {
+      label = "Macro_ion";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_tap &kp I &macro_release &kp RSHIFT &macro_tap &kp O &kp N>;
+    };
   };
 };
 
@@ -44,6 +51,7 @@
         COMBO(x, &kp X, 16 17)
         COMBO(j, &kp J, 6 17)
         COMBO(sch, &macro_sch, 11 13)
+        COMBO(ion, &macro_ion, 9 16 18)
         COMBO(_sz, &kp DE_SZ, 35 11)
         COMBO(_ue, &kp DE_UE, 35 8)
         COMBO(_ae, &kp DE_AE, 35 17)

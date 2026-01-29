@@ -59,7 +59,7 @@
             label = "Symbol";
             bindings = <
                 &kp DE_ACUTE   &kp DE_GRAVE   &kp DE_LBKT    &kp DE_RBKT      &kp DE_QMARK   &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &kp DE_FSLH
-                &kp DE_BSLH    &kp DE_AT      &kp DE_LPAR    &kp DE_RPAR      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &trans
+                &kp DE_BSLH    &kp DE_HASH    &kp DE_LPAR    &kp DE_RPAR      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &trans
                 &trans         &kp DE_TILDE   &kp DE_LBRC    &kp DE_RBRC      &trans  &trans &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_HASH
                   &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
